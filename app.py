@@ -5,7 +5,7 @@ import google.generativeai as genai
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 # Pilih model
-model = genai.GenerativeModel("gemini-2.5-flash-image")
+model = genai.GenerativeModel("gemini-2.5-flash-lite")
 
 # UI Streamlit
 st.set_page_config(page_title="Chatbot", page_icon="🤖")
