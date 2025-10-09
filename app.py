@@ -5,10 +5,10 @@ import google.generativeai as genai
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 # Pilih model
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.5-flash-image")
 
 # UI Streamlit
-st.set_page_config(page_title="Gemini Chatbot", page_icon="🤖")
+st.set_page_config(page_title="Chatbot", page_icon="🤖")
 st.title("🤖 Chatbot Gemini AI")
 
 if "chat_history" not in st.session_state:
